@@ -1,0 +1,83 @@
+{
+	"labels": 
+	[
+		{ 
+			"content": "Connect4",
+			"x_center_ratio": 0.3,
+			"y_center_ratio": 0.6,
+			"scale": 1.0,
+			"color": "FF0000"
+		},
+		{
+			"content": "",
+			"x_center_ratio": 0.7,
+			"y_center_ratio": 0.6,
+			"scale": 1.0,
+			"color": "A52A2A"
+		},
+		{
+			"content": "",
+			"x_center_ratio": 0.7,
+			"y_center_ratio": 0.55,
+			"scale": 1.0,
+			"color": "000080"
+		},
+		{
+			"content": "",
+			"x_center_ratio": 0.7,
+			"y_center_ratio": 0.45,
+			"scale": 1.0,
+			"color": "FF0000"
+		},
+		{
+			"content": "",
+			"x_center_ratio": 0.7,
+			"y_center_ratio": 0.4,
+			"scale": 0.75,
+			"color": "FF0000"
+		}
+	],
+	"buttons": 
+	[
+		{
+			"name": "sfxButton",
+			"image": "sfxButton.png",
+			"x_center_ratio": 0.215,
+			"y_center_ratio": 0.45
+		},
+		{
+			"name": "apiButton",
+			"image": "apiButton.png",
+			"x_center_ratio": 0.3,
+			"y_center_ratio": 0.45
+		},
+		{
+			"name": "gameButton",
+			"image": "gameButton.png",
+			"x_center_ratio": 0.385,
+			"y_center_ratio": 0.45
+		}
+	],
+	"api": 
+	{
+		"url": "http://api.openweathermap.org/data/2.5/weather?q=Boston,US",
+		"name": "name",
+		"desc": 
+		{
+			"level1": "weather",
+			"level2": "description"
+		},
+		"wind" : 
+		{
+			"level1": "wind",
+			"level21": "deg",
+			"level22": "speed"
+		}
+	},
+	"font": 
+	{
+		"font_file": "font.fnt",
+		"image_file": "font.png"
+	},
+	"background": "back-green.jpg"
+}
