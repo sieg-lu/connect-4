@@ -59,7 +59,12 @@ public class MainScreen implements Screen {
 			} else if (event.getListenerActor() == buttons[1]) {
 				// API button, fetch the weather info from url
 				// fill the labels with the weather info
-				WeatherInfo weather = new WeatherInfo(apiObject);
+				WeatherInfo weather;
+				try {
+					weather = new WeatherInfo(apiObject);
+				} catch (Exception ex) {
+					return;
+				}
 				
 				labels[1].label.setText(weather.title);
 				labels[2].label.setText(weather.city);
